@@ -1,0 +1,50 @@
+
+:root {
+    --scrollbar-track-color: #E3EDE8; /* Track color */
+    --scrollbar-thumb-color: #6ABE45; /* Thumb color (green accent) */
+  }
+  
+  #chat-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+    background-color: #BFE1CC;
+    overflow-y: auto;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 11rem);
+    padding: 2rem;
+    transition: 1s all;
+    /* scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
+
+  }
+
+  #chat-body::-webkit-scrollbar-track{
+    background: transparent;
+  }
+
+  /* Track styles for WebKit browsers */
+#chat-body::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
+}
+
+/* Thumb styles for WebKit browsers */
+#chat-body::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+  border-radius: 6px;
+}
+
+/* media q*/
+
+@media screen and (max-width: 768px) {
+  #chat-body {
+    padding-bottom: 2rem;
+    padding: 1rem;
+    /* height: calc(100vh - 11rem); */
+    height: calc(var(--vh, 1vh) * 100 - 11rem);
+  }
+}
