@@ -1,5 +1,6 @@
 import "./App.css";
-import Sidebar from "./Components/Sidebar";
+import MainLayout from "./Layouts/MainLayout";
+
 import {
   fetchAssessmentQuestions,
   processAssessmentResults,
@@ -37,7 +38,7 @@ function App() {
 
   return (
     <>
-      <Sidebar />
+      <MainLayout />
     </>
   );
 }
