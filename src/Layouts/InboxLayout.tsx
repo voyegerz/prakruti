@@ -1,4 +1,4 @@
-import React from 'react'
+
 import InboxTabs from '../Components/InboxTabs'
 import ChatSelectListItem from '../Components/ChatSelectListItem'
 

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { fetchUserResponse } from "../Utils/Api";
 import "../assests/Styles/chatLayout.css"
 

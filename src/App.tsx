@@ -8,10 +8,6 @@ import {
   calculatePercentages,
 } from "./Utils/Api";
 
-type ask_ob = {
-  options: string[] | string;
-  questions: string[] | string;
-};
 
 function App() {
   /**************************************checking the working of the api services******************************************** */
